@@ -1,0 +1,135 @@
+/*****************Terms & Conditions*************/
+.terms-wrapper {
+  background: linear-gradient(to right, #f1ecb1, #ecd8d8);
+  min-height: 100vh;
+}
+
+.mainContain1 {
+  background: url('https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_640.jpg');
+  background-size: cover;
+}
+
+.terms-wrapper h1 {
+  font-weight: 700;
+  color:whitesmoke;
+}
+
+.terms-wrapper h4 {
+  color: whitesmoke;
+  border-left: 4px solid rebeccapurple;
+  padding-left: 10px;
+}
+
+.terms-wrapper p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/*****************Privacy policy*************/
+.privacy-gradient {
+ background: linear-gradient(to right, #a2c2d5, #8ac5bc);
+
+  min-height: 100vh;
+}
+
+.privacy-gradient h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.privacy-gradient h4 {
+  color: #ffeaa7; /* Soft yellow for contrast */
+  border-left: 4px solid #fbc531;
+  padding-left: 12px;
+}
+
+.privacy-gradient p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #f5f6fa;
+}
+
+a.link-warning {
+  font-weight: 500;
+}
+
+/*****************Cookie Policy*************/
+.cookie-gradient {
+  background: linear-gradient(to right, #8e9eab, #eef2f3); /* Soft gray-blue gradient */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.bg-glass {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h4 {
+  color: #dfe6e9;
+  border-left: 4px solid #00bcd4;
+  padding-left: 12px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #f0f0f0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.custom-list {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.custom-list li {
+  margin-bottom: 0.5rem;
+}
+
+/*****************Copyright Policy*************/
+
+.copyright-gradient {
+background: linear-gradient(to right, #d7bfee, #8cb3da);
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.bg-glass {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h4 {
+  color: #ffeaa7;
+  border-left: 4px solid #f1c40f;
+  padding-left: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #fdfefe;
+}

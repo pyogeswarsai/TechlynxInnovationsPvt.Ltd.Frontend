@@ -1,0 +1,322 @@
+/* ----------------PageOne------------------ */
+
+.contact-section {
+  position: relative;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.contact-section > div {
+  position: relative;
+  z-index: 2;
+}
+
+/* ----------------PageOne------------------ */
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(9, 9, 16, 0.2);
+}
+
+.video-background-section {
+  position: relative;
+  /* height: 100vh; */
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* keep behind content */
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+
+/* ------------------------- */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  gap: 20px;
+  width: 80vw;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;  
+}
+
+.custom-card {
+  background-color: transparent;
+  border: 1px dotted white;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  height: 220px; 
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.custom-card:hover .card-img-top {
+  transform: translateY(-100%);
+}
+
+.custom-card:hover .card-hover-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-hover-content .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.card-hover-content h5 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.card-hover-content p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .custom-card {
+    height: 200px;  /* smaller for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .custom-card {
+    height: 180px;  /* smaller for mobile */
+  }
+}
+
+
+
+
+
+
+
+
+.map-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #93a0b7, #052352);
+}
+
+.map-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
+.map-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.map-info h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.map-info p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.contact-details p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #f2f4f7;
+}
+
+.contact-details strong {
+  color: #4ca1af;
+}
+
+/* Map Frame */
+.map-frame {
+  flex: 1;
+  min-width: 320px;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+.map-header {
+  padding: 40px 20px;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  color: white;
+}
+
+.map-frame-full {
+  width: 100%;
+  height: 400px;
+}
+
+.map-frame-full iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+.management-info-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #051532, #0e2fb1);
+  animation: slideIn 0.6s ease forwards;
+}
+
+
+.management-info-section .card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.management-info-section .card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.slide-in-section {
+  padding: 60px 20px;
+  background: #062845;
+  animation: slideIn 0.6s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/*----------------------------------Grid4----------------------------------*/
+
+.slide-in-section {
+  padding: 60px 20px;
+  background: #030927;
+  animation: slideIn 0.6s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.calendly-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/*----------------------------------Grid4----------------------------------*/
+
+
+

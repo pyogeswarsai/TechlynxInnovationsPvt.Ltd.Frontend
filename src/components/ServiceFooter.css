@@ -1,0 +1,35 @@
+.stay-connected-custom {
+  background: linear-gradient(135deg, #004e92, #000428);
+  color: white;
+}
+.stay-connected-custom h2,
+.stay-connected-custom h4 {
+  font-weight: 600;
+}
+.stay-connected-custom .btn {
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.stay-connected-custom .btn-outline-light:hover {
+  background-color: white;
+  color: #000;
+}
+.stay-connected-custom .btn-primary {
+  background-color: #00b4d8;
+  border-color: #00b4d8;
+}
+.stay-connected-custom .btn-primary:hover {
+  background-color: #0077b6;
+  border-color: #0077b6;
+}
+.stay-connected-custom a:hover {
+  color: #00b4d8;
+}
+.social-icons-container a {
+  font-size: 1.5rem; 
+  color: white;  
+  margin: 0 12px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+

@@ -1,0 +1,628 @@
+.section-nav2 {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 10%;
+  z-index: 9999;
+}
+.section-link {
+  font-weight: 500;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+.section-nav .nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+  color: darkblue;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-nav-mobile {
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  padding: 10px 0;
+  position: sticky;
+  margin-top: 0 !important;
+  top: 0; /* below navbar */
+  z-index: 998;
+}
+
+.section-nav-mobile ul {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  margin: 0;
+  list-style: none;
+}
+.section-nav-mobile a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #003366;
+  transition: color 0.3s ease;
+}
+
+.section-nav-mobile a:hover {
+  color: #0d6efd;
+}
+.section-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: darkblue;
+  transition: width 0.3s ease-in-out;
+}
+.section-link:hover {
+  color: darkblue;
+}
+.section-link:hover::after {
+  width: 100%;
+}
+/* Navbar toggler */
+.custom-toggler {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  color: #333;
+  padding: 0.25rem 0.5rem;
+}
+
+.custom-icon {
+  font-weight: bold;
+}
+
+/* Navbar links */
+
+/* On smaller screens, center items */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-collapse.show {
+    padding-top: 0.5rem;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.section-heading {
+  margin-bottom: 1.2rem;
+}
+.section-subtext {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+.card-row {
+  margin-top: 2rem; 
+}
+.why-join-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+   background-color: #f8f9fa; 
+}
+.section-subtext {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  animation: fadeInUp 0.8s ease both;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 230px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.image-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.image-card:hover .card-img {
+  transform: scale(1.1);
+}
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.overlay-text h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+.image-card:hover .overlay-text h3 {
+  color: #ffd700;
+}
+@media (max-width: 768px) {
+  .image-card {
+    height: 220px;
+  }
+  .overlay-text h3 {
+    font-size: 1.2rem;
+  }
+}
+.discover-card {
+  background: #eaf2ff;
+  padding: 1.5rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 2rem auto 0 auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.discover-text h3 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+.discover-text p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 0;
+  max-width: 700px;
+}
+.discover-btn-upgraded {
+  background: #007bff;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 123, 255, 0.3);
+}
+.discover-btn-upgraded:hover {
+  background-color: blueviolet;
+  transform: translateY(-2px);
+}
+.discover-btn-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+@media (max-width: 768px) {
+  .discover-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 0.5rem;
+  }
+  .discover-btn-wrapper {
+    margin-top: 2rem;
+  }
+  .discover-text p {
+    margin-bottom: 0;
+  }
+}
+.team-testimonials-section {
+  background-image: url('b2.jpeg');
+  background-size: contain;
+  background-position: center;
+  color: white;
+}
+
+.team-testimonials-section .card {
+  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+.team-testimonials-section .card:hover {
+  transform: translateY(-9px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-testimonials-section .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  object-position: center top; /* <<< This is the key line */
+  /* optional: try "center 30%" or "center 40%" if you want more downward shift */
+}
+
+.see-more-btn {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  background: transparent;
+  z-index: 0;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+.see-more-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: white;
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+.see-more-btn:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.see-more-btn:hover {
+  color: black;
+}
+.see-more-btn .arrow {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+.see-more-btn:hover .arrow {
+  transform: translateX(4px);
+}
+.expertise {
+  background-color:  #f9f9ff;
+  padding: 30px 15px;
+  max-width: 1250px ;
+  margin: 0 auto;
+}
+.expertise h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+.expertise p {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+  gap: 30px;
+}
+.expertise-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaf2ff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.expertise-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.image-wrapper {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+}
+.expertise-card:hover .expertise-icon {
+  transform: translateX(10%);
+}
+.expertise-icon {
+  transition: transform 0.6s ease;
+}
+.expertise-icon {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+.expertise-card-content {
+  padding: 16px;
+  text-align: center;
+}
+.expertise-card-content h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #111;
+}
+.expertise-card-content p {
+  margin-top: 8px;
+  font-size: 1rem;
+
+  color: black;
+  line-height: 1.4;
+}
+.caption {
+  font-style: italic;
+  color: #555;
+}
+.fill-on {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  background: transparent;
+  z-index: 0;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+.fill-on::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgb(20, 186, 241);
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+.fill-on:hover::before {
+  width: 100%; 
+  left: 0;
+  right: auto;
+}
+.fill-on:hover {
+  color: black;
+}
+@media (max-width: 768px) {
+  .expertise-icon {
+    height: 140px;
+  }
+  .expertise-card-content {
+    padding: 14px;
+  }
+}
+.job-openings-section {
+   background: linear-gradient(135deg, #e7d1fc, #a7ccf1);
+  min-height: 85vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #003366;
+}
+.job-card-custom {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-left: 5px solid #003366;
+}
+.job-card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  background-image: url('JobOpeningsbg.jpg');
+  background-size: cover;
+}
+.job-header {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+.job-role {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0d6efd;
+}
+.job-type {
+  font-size: 0.9rem;
+  color: #555;
+}
+.job-description {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 0.75rem;
+}
+.job-details li {
+  font-size: 0.9rem;
+  color: #333;
+  padding: 2px 0;
+}
+.apply-btn-custom {
+  background: #0d6efd;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: 500;
+}
+.apply-btn-custom:hover {
+  background: #084cd1;
+  transform: scale(1.05);
+}
+.see-more {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid #084cd1;
+  border-radius: 8px;
+  color: #084cd1;
+  background: transparent;
+  z-index: 0;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.see-more::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0; /* start from right */
+  height: 100%;
+  width: 0;
+  background-color: white;
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+
+.see-more:hover::before {
+  width: 100%; /* fill from right to left */
+  left: 0;
+  right: auto;
+}
+
+.see-more:hover {
+  color: black; /* text turns black on white background */
+}
+
+/* Optional: Animate dots or arrow */
+.see-more .arrow {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.see-more:hover .arrow {
+  transform: translateX(4px);
+}
+.stay-connected-custom {
+  background: linear-gradient(135deg, #004e92, #000428);
+  color: white;
+}
+.stay-connected-custom h2,
+.stay-connected-custom h4 {
+  font-weight: 600;
+}
+.stay-connected-custom .btn {
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.stay-connected-custom .btn-outline-light:hover {
+  background-color: white;
+  color: #000;
+}
+.stay-connected-custom .btn-primary {
+  background-color: #00b4d8;
+  border-color: #00b4d8;
+}
+.stay-connected-custom .btn-primary:hover {
+  background-color: #0077b6;
+  border-color: #0077b6;
+}
+.stay-connected-custom a:hover {
+  color: #00b4d8;
+}
+.social-icons-container a {
+  font-size: 1.5rem; 
+  color: white;  
+  margin: 0 12px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* =================== Responsive Styles =================== */
+/* ======== Carousel Caption Responsive Styles ======== */
+@media (max-width: 991px) and (min-width: 768px) {
+  .team-testimonials-section .col-md-3 {
+    flex: 0 0 50%;   /* 2 per row */
+    max-width: 50%;
+  }
+  .team-testimonials-section .card {
+    height: 100%; /* keeps consistent height */
+  }
+}
+
+
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .job-openings-section .col-md-4 {
+    flex: 0 0 50%;   /* 2 per row */
+    max-width: 50%;
+  }
+  .job-openings-section .job-card-custom {
+    height: 100%; /* keeps equal height */
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .job-openings-section .col-md-4 {
+    flex: 0 0 50%;   /* 2 per row */
+    max-width: 50%;
+  }
+
+  /* Center align last card in the row */
+  .job-openings-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centers lone items in last row */
+  }
+
+  .job-openings-section .job-card-custom {
+    height: 100%;
+  }
+}

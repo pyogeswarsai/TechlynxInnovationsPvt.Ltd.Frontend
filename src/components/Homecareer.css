@@ -1,0 +1,50 @@
+/* Career.css */
+
+.career-content-wrapper{
+  background: linear-gradient(135deg, #0a0f1c 0%, #1c2b64 50%, #2b1055 100%);
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.careers-section {
+  background-color: #0a0f1c;
+  color: white;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.career-image {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.career-content {
+  padding: 3rem 2rem;
+}
+
+.career-content h2 {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .career-image {
+    min-height: 300px;
+  }
+
+  .career-content {
+    padding-top: 2rem;
+    text-align: center;
+  }
+}
+
+.chang {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /*(Purple–Blue–Pink Glow)*/
+  color:white !important;
+}
+
+.chang:hover {
+  font-weight: bold;
+}

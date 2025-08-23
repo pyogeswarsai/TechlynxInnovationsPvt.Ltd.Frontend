@@ -1,0 +1,12 @@
+.history-container {
+  background-color:rgb(244, 233, 216);
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.bg-opacity {
+  background-color: rgba(210, 210, 220, 0.1);
+  backdrop-filter: blur(6px);
+}

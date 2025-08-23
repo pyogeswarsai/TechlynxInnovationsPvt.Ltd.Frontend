@@ -1,0 +1,106 @@
+footer {
+  background: linear-gradient(to right, #3a3a52, #6b5b95);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content h3 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.footer-content h3::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f18930;
+  margin-top: 8px;
+}
+
+.footer-content p,
+.footer-content span {
+  font-size: 15px;
+  color: #ddd;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-content ul li a:hover {
+  color: #f189ff;
+  text-decoration: underline;
+}
+
+/* Icons */
+.icons {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #f18930;
+}
+
+.social-icons li {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #abff7a;
+}
+
+.social-icons a span {
+  font-size: 22px;
+  margin-right: 8px;
+}
+
+/* Bottom bar */
+footer .bg-info {
+  background-color: rgb(255, 131, 122) !important;
+}
+
+footer .bg-info p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+a.gmail {
+  color: #ddd;             
+  text-decoration: none;    
+}
+
+a.gmail:hover {
+  color: #f189ff;          
+  text-decoration: underline;
+}
+
+a.map {
+  color: #ddd;             
+  text-decoration: none;    
+}
+
+a.map:hover {
+  color: #f189ff;          
+  text-decoration: underline;
+}
+

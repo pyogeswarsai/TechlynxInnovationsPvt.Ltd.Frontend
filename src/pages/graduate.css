@@ -1,0 +1,251 @@
+.graduate-section {
+  background-image: url('/grad.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.graduate-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: fadeInDown 1s ease-in-out;
+  margin-bottom: 1rem;
+}
+.graduate-quote {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #f0f0f0;
+  animation: fadeIn 2s ease-in;
+  max-width: 600px;
+}
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Info Section */
+.graduate-info-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin-top: 3rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+.graduate-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: #222;
+  animation: fadeInLeft 1s ease-in-out;
+}
+.graduate-text h2 {
+  font-size: 2.2rem;
+  color: #004085;
+  margin-bottom: 1rem;
+}
+.graduate-text ul {
+  padding-left: 0;
+  list-style: none;
+}
+.graduate-text ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #333;
+}
+.graduate-text ul li::before {
+  content: "🎓";
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+}
+.graduate-image {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  animation: fadeInRight 1s ease-in-out;
+}
+.graduate-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+.graduate-form-section {
+  background: #f7f9fc;
+  padding: 50px 20px;
+  border-radius: 8px;
+  margin-top: -30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.form-heading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+.form-subheading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #10b981;
+  margin-bottom: 2rem;
+}
+.graduate-form .form-label {
+  font-weight: 600;
+  color: #374151;
+}
+.graduate-form .form-control,
+.graduate-form .form-select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  background-color: #fff;
+}
+.graduate-form .form-control:focus,
+.graduate-form .form-select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
+.education-entry {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.education-entry:hover {
+  background-color: #e2e8f0;
+}
+.add-education-btn {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  background-color: #0d6efd;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.add-education-btn:hover {
+  background-color: #0a58ca;
+}
+.add-education-btn i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+.bi-trash {
+  font-size: 1.2rem;
+}
+.bi-trash:hover {
+  color: #c0392b;
+}
+.add-education-btn {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.add-education-btn:hover {
+  background-color: #2563eb;
+}
+.add-education-btn i {
+  margin-right: 6px;
+}
+.skills-input input {
+  margin-bottom: 10px;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.skill-tag {
+  background: #e0f2fe;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+.submit-btn {
+  display: block;
+  width: 100%;
+  background-color: #10b981;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+.submit-btn:hover {
+  background-color: #059669;
+}
+@media screen and (max-width: 768px) {
+  .graduate-hero h1 {
+    font-size: 2rem;
+  }
+}
+.back-btn {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.back-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}

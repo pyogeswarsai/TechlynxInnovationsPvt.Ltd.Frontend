@@ -1,0 +1,117 @@
+/* Sky Blue Full Page Background */
+.apply {
+  background: linear-gradient(to right, #cceeff, #e6f7ff);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card with Gradient Background and Soft Glassy Look */
+.job-form {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 850px;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease, background 0.3s ease;
+  border: 1px solid #ddd;
+  background-color: snow;
+  background-size: cover;
+}
+
+.job-form:hover {
+  transform: translateY(-5px);
+}
+
+/* Input and Select Fields Styling */
+.input-hover {
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  background-color: #f9fbfd;
+}
+
+.input-hover:hover,
+.input-hover:focus {
+  border-color: #007bff;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* File Upload Customization */
+input[type="file"] {
+  cursor: pointer;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+  padding: 12px 36px;
+  font-weight: 600;
+  border-radius: 10px;
+  background: linear-gradient(to right, #38bdf8, #0ea5e9);
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #0ea5e9, #0284c7);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(3, 105, 161, 0.5);
+}
+
+/* Typography Enhancements */
+h2 {
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+h4 {
+  color: #374151;
+  font-weight: 500;
+}
+
+label {
+  color: #334155;
+  font-weight: 500;
+}
+
+p.text-muted {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+/* Add spacing between sections */
+.row.g-3 > div {
+  margin-bottom: 12px;
+}
+.back-btn {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.back-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,86 @@
+/* Ensure body and html take full width and no overflow */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Fix overflow from Bootstrap container or carousel */
+#heroCarousel {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix each slide taking exact screen width */
+.carousel-inner, 
+.carousel-item,
+.hero-slide-1,
+.hero-slide-2,
+.hero-slide-3,
+.hero-slide-4 {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Optional: Remove Bootstrap padding from carousel-caption */
+.carousel-caption {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.hero-slide-1,
+.hero-slide-2,
+.hero-slide-3,
+.hero-slide-4 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-slide-1 {
+  background-image: url('/Images/slide1.png'); /* Replace with your own image */
+}
+
+.hero-slide-2 {
+  background-image: url('/Images/slide2.png'); /* Replace with your own image */
+}
+
+.hero-slide-3 {
+  background-image: url('/Images/slide3.png'); /* Replace with your own image */
+}
+
+.hero-slide-4 {
+  background-image: url('/Images/slide4.png'); /* Replace with your own image */
+}
+
+/* Optional: dark overlay */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.cnge {
+  background: linear-gradient(135deg, #667eea, #764ba2); /*Blue-Purple (modern, trustworthy) */
+}

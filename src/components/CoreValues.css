@@ -1,0 +1,75 @@
+.core-values-section {
+  background-image: url('image17.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.core-card {
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background: #000;
+  min-height:300px;
+  overflow:hidden;
+  transition: all 0.3s ease-in-out;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  position:relative;
+  font-weight: bolder;
+}
+.core-card::before{
+  content: "";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.5);
+  transition:background  0.3s ease;
+  z-index:1;
+  border-radius:0.5rem;
+}
+.core-card::after{
+  content: "";
+  position:absolute;
+  inset: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  transition:transform 0.5s ease;
+  z-index:0;
+  transform:scale(1);
+}
+.core-card:hover::before{
+  background: rgba(0,0,0,0.6);
+}
+.core-card:hover::after{
+  transform:scale(1.1);
+}
+.core-card-overlay{
+  position:relative;
+  z-index:2;
+}
+
+.core-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Fade-up animation with delay */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
