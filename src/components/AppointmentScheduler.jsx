@@ -24,7 +24,8 @@ const AppointmentScheduler = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:9090/api/contact/appointment", formData);
+      const baseURL = import.meta.env.VITE_BACKEND_URL;
+      await axios.post(`${baseURL}/api/contact/appointment`, formData);
 
       setConfirmation(
         `✅ Your virtual meet has been scheduled for ${formData.appointmentDate} at ${formData.timeSlot}. Thank you, ${formData.fullName}!`

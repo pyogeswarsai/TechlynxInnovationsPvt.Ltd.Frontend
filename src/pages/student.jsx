@@ -56,8 +56,9 @@ const StudentIntern = () => {
     if (resume) data.append("resume", resume);
 
     try {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL;
       const res = await axios.post(
-        "http://localhost:9090/api/careers/intern/apply",
+        `${backendUrl}/api/careers/intern/apply`,
         data,
         { headers: { "Content-Type": "multipart/form-data" } }
       );

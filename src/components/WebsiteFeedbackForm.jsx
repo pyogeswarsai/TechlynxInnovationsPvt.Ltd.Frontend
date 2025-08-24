@@ -28,7 +28,8 @@ const WebsiteFeedbackForm = () => {
     }
 
     try {
-      await axios.post("http://localhost:9090/api/contact/feedback", formData);
+      const backendUrl = import.meta.env.VITE_BACKEND_URL;
+      await axios.post(`${backendUrl}/api/contact/feedback`, formData);
       alert("✅ Thank you for your valuable feedback!");
       setFormData({
         firstName: "",

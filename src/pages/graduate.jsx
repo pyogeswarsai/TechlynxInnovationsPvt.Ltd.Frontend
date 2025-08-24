@@ -114,7 +114,8 @@ const Graduate = () => {
     }
 
     // ✅ DO NOT set headers manually
-    await axios.post("http://localhost:9090/api/careers/graduates/apply", formData);
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    await axios.post(`${backendUrl}/api/careers/graduates/apply`, formData);
 
     navigate('/careers/thank-you');
   } catch (error) {

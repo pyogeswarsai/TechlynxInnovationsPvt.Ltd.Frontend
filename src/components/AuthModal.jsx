@@ -2,7 +2,7 @@
   import './AuthModal.css';
   import { AuthContext } from '../contexts/AuthContext';
 
-  const backendUrl = "http://localhost:9090";
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   const AuthModal = ({ isOpen, onClose }) => {
     const {login} = useContext(AuthContext);

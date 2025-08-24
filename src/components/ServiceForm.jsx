@@ -40,8 +40,9 @@ const ServiceForm = () => {
         industry: formData.industry,
         service: formData.service,
       };
-
-      await axios.post("http://localhost:9090/api/contact/request", payload);
+      
+      const backendUrl = import.meta.env.VITE_BACKEND_URL;
+      await axios.post(`${backendUrl}/api/contact/request`, payload);
 
       alert("✅ Your request has been submitted successfully!");
 

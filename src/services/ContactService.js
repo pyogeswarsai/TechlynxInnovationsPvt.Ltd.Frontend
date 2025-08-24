@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:9090/api";
+const API_BASE = import.meta.env.VITE_BACKEND_URL;
 
 // Request Service
 export const submitRequest = (data) =>

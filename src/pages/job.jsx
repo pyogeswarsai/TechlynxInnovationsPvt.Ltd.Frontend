@@ -58,7 +58,8 @@ function JobForm() {
       payload.append("resume", resumeFile);
     }
 
-      await axios.post("http://localhost:9090/api/careers/experienced/job-applications/apply", payload, {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL;
+      await axios.post(`${backendUrl}/api/careers/experienced/job-applications/apply`, payload, {
       headers: {
         "Content-Type": "multipart/form-data"
       }
