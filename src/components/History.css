@@ -1,7 +1,10 @@
 .history-container {
-  background-color:rgb(244, 233, 216);
   width: 100%;
   min-height: 100vh;
+  background-image: url('https://wallpaperaccess.com/full/1567665.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 40px 20px;
   box-sizing: border-box;
 }

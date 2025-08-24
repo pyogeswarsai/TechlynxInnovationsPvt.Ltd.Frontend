@@ -4,6 +4,7 @@ import './Nav.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.jpg';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,7 +35,7 @@ const Navbar = () => {
 
         {/* Logo + Brand */}
         <div className="d-flex align-items-center">
-          <img src="src\assets\Logo.jpg" alt="Company Logo" className="logo-img me-2" />
+          <img src={logo} alt="Company Logo" className="logo-img me-2" />
           <span className="company-name fw-bold fs-4">Techlynx Innovations Pvt. Ltd.</span>
         </div>
 

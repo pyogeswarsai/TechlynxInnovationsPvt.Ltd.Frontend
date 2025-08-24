@@ -262,7 +262,7 @@
   }
 }
 .team-testimonials-section {
-  background-image: url('b2.jpeg');
+  background-image: url('/b2.jpeg');
   background-size: contain;
   background-position: center;
   color: white;
@@ -465,7 +465,7 @@
 .job-card-custom:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
-  background-image: url('JobOpeningsbg.jpg');
+  background-image: url('/JobOpeningsbg.jpg');
   background-size: cover;
 }
 .job-header {

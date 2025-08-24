@@ -79,7 +79,7 @@ const Career = () => {
                   </Link>
                </div>
                <div className="col-md-4">
-                 <Link to="/careers/jobcards" target="_blank" rel="noopener noreferrer">
+                <Link to="/careers/jobcards" style={{textDecoration: 'none'}}>
                 <div className="image-card">
                   <img src="experience.jpeg" alt="Experienced" className="card-img" />
                 <div className="overlay-text"><h3>Experienced</h3>
@@ -96,16 +96,16 @@ const Career = () => {
             Our culture encourages creativity, celebrates contributions, and rewards initiative.
             Whether you're starting your journey or scaling new heights, we’re here to grow with you.
             Come see what makes us different — and discover where you belong.</p>
-            </div>
+          </div>
             <div className="discover-btn-wrapper">
               <Link to="/about-us">
-              <button className="discover-btn-upgraded">Discover Us <span>&rarr;</span></button>
+                <button className="discover-btn-upgraded">Discover Us <span>&rarr;</span></button>
               </Link>
-              </div>
-              </div>
+            </div>
+        </div>
 
-             <section id="ourteams" className="team-testimonials-section py-5 mt-5" style={{ scrollMarginTop: '70px' }}>
-
+             
+  <section id="ourteams" className="team-testimonials-section py-5 mt-5" style={{ scrollMarginTop: '70px' }}>
 <div className="container">
     <h2 className="text-center text-white mb-5 fw-bold">Meet Our Team</h2>
     <div className="row justify-content-center">
@@ -121,18 +121,6 @@ const Career = () => {
       </div>
 
       <div className="col-md-3 mb-4">
-        <div className="card h-100">
-          <img src="renuka.jpg" className="card-img-top" alt="member-3" />
-          <div className="card-body">
-            <h5 className="card-title fw-bold">Renuka Kotlapati</h5>
-            <p className="card-text text-dark">
-              "We're committed to nurturing digital talent in our company.I value my role in building pathways for innovation."
-            </p>
-          </div>
-        </div>
-      </div>
-
-            <div className="col-md-3 mb-4">
         <div className="card h-100">
           <img src="pavani.jpg" className="card-img-top" alt="member-1" />
           <div className="card-body">
@@ -155,6 +143,18 @@ const Career = () => {
           </div>
         </div>
       </div>
+
+      <div className="col-md-3 mb-4">
+        <div className="card h-100">
+          <img src="renuka.jpg" className="card-img-top" alt="member-3" />
+          <div className="card-body">
+            <h5 className="card-title fw-bold">Renuka Kotlapati</h5>
+            <p className="card-text text-dark">
+              "We're committed to nurturing digital talent in our company.I value my role in building pathways for innovation."
+            </p>
+          </div>
+        </div>
+      </div>      
 
     </div>
     <div className="d-flex justify-content-center mt-4">
@@ -265,7 +265,7 @@ const Career = () => {
             <li><strong>Experience:</strong> 0-1 Years</li>
           </ul>
           <div className="text-center mt-4">
-            <Link to="/careers/apply-form" target="_blank" rel="noopener noreferrer">
+            <Link to="/careers/apply-form">
               <button className="apply-btn-custom">Apply Now</button>
               </Link>
             </div>
@@ -291,7 +291,7 @@ const Career = () => {
          </div>
        </div>
               <div className="d-flex justify-content-center mt-4">
-                <Link to="/careers/jobcards" target="_blank" rel="noopener noreferrer">
+                <Link to="/careers/jobcards">
                 <button type="button" className="see-more">See More <span className="arrow">....</span></button></Link>
               </div>
        </section>
