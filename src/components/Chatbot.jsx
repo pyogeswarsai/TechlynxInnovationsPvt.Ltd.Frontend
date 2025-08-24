@@ -5,6 +5,10 @@ import "./Chatbot.css";
 const Chatbot = () => {
     const messagesEndRef = useRef(null);
 
+    const [showQueryInput, setShowQueryInput] = useState(false);
+    const [userQuery, setUserQuery] = useState("");
+    const [querySubmitted, setQuerySubmitted] = useState(false);
+
   const initialMessages = [
     { from: "bot", text: "👋 Hi, welcome to Techlynx Innovations Pvt. Ltd!" },
     { from: "bot", text: "Please choose an option below:" },
@@ -196,12 +200,34 @@ const Chatbot = () => {
       newMessages.push({
         from: "bot",
         text: "✍️ Don't forget to submit the feedback form you can access it from contact section",
-      });      
+      });
+      newMessages.push({
+        from: "bot",
+        text: "💬 Do you have any other queries you'd like to share with us?",
+      });            
       setOptions([]);
+      setShowQueryInput(true);
     }
 
     setMessages(newMessages);
   };
+
+  const handleQuerySubmit = () => {
+  if (userQuery.trim() !== "") {
+    const newMessages = [
+      ...messages,
+      { from: "user", text: userQuery },
+      {
+        from: "bot",
+        text: "📨 Thank you! We’ll get back to you soon regarding your query.",
+      },
+    ];
+    setMessages(newMessages);
+    setUserQuery("");
+    setShowQueryInput(false);
+    setQuerySubmitted(true);
+  }
+};
 
   useEffect(() => {
   messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -229,6 +255,20 @@ const Chatbot = () => {
             <div ref={messagesEndRef} />
           </div>
           <div className="chatbot-options">
+            {showQueryInput && (
+  <div className="chatbot-query-input">
+    <input
+      type="text"
+      placeholder="Type your query here..."
+      value={userQuery}
+      onChange={(e) => setUserQuery(e.target.value)}
+      className="query-input"
+    />
+    <button onClick={handleQuerySubmit} className="submit-btn">
+      Submit
+    </button>
+  </div>
+)}
             {options.map((opt, idx) => (
               <button
                 key={idx}
