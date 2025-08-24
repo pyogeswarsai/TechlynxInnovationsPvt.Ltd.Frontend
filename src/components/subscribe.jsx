@@ -21,14 +21,15 @@ const SubscribePopup = ({ onClose }) => {
               <input type="tel" placeholder="Enter your phone number" required />
               <div className="button-group">
                 <button type="submit" className="btn-submit">Submit</button>
-                <button type="button" className="close-btn" onClick={onClose}>Close</button></div>
+                <button type="button" className="btn-submit" onClick={onClose}>Close</button>
+              </div>
             </form>
           </>
         ) : (
           <div className="thank-you-message">
             <h4>🎉 Thank you for subscribing!</h4>
             <p>We'll keep you updated with the latest news and opportunities.</p>
-            <button className="close-btn" onClick={onClose}>Close</button>
+            <button className="btn-submit" onClick={onClose}>Close</button>
           </div>
         )}
       </div>

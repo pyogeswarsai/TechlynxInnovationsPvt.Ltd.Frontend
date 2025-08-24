@@ -62,10 +62,10 @@ const ContactOptions = ({ onRequestService, onWebsiteFeedback, onWhatsappIcon, o
   if (action === "service") onRequestService();
   if (action === "feedback") onWebsiteFeedback();
   if (action === "whatsapp") {
-    window.open("https://wa.me/919182452794", "_blank");
+    window.open("https://wa.me/916309390893", "_blank");
   }
   if (action === "join") {
-    window.location.href = "tel:+919182452794"; // Replace with your number
+    window.location.href = "tel:+916309390893"; // Replace with your number
   }
   if (action === "chat") onManagementClick();
   if (action === "partner") onPartnerClick();

@@ -25,8 +25,6 @@ const testimonials = [
   { name: 'Meghana Kunchanapalli', text: 'Great mentors and training. They genuinely care about development.', fullText: 'The onboarding process was smooth and detailed. Questions are always welcomed. Every new hire feels ready.', img: '/meghana.jpg' },
   { name: 'Dharma Teja Darsi', text: 'Amazing workplace! There’s a healthy balance of work and fun.', fullText: 'Work-life balance is truly respected. No one feels left behind. Wellness is prioritized.', img: '/dharma teja.jpg' },
   { name: 'Chaitanya Godiboena', text: 'Amazing workplace! The team is always pushing limits.', fullText: 'Work-life balance is truly respected. Support is always available. Every success is celebrated.', img: '/chaitanya.jpg' },
-  { name: 'Naga Chandana Vardhani T', text: 'Amazing workplace! Learning never stops here.', fullText: 'Work-life balance is truly respected. Efforts are recognized. Mentorship is always available.', img: '/chandana.jpg' },
-  { name: 'Yamuna Mani Kodavatiganti', text: 'Amazing workplace! You feel inspired every day.', fullText: 'Work-life balance is truly respected. Everyone strives for excellence. Leaders are approachable.', img: '/yamuna.jpg' },
   { name: 'Raheema Shaik', text: 'Amazing workplace! I’ve never felt more valued.', fullText: 'Work-life balance is truly respected. Success is a shared goal. Every project teaches something new.', img: '/raheema.jpg' },
   { name: 'Sai Haritha pasupuleti', text: 'Amazing workplace! Motivation comes from all around.', fullText: 'Work-life balance is truly respected. Achievements are celebrated. There’s a sense of belonging.', img: '/haritha.jpg' },
 ];
@@ -104,7 +102,7 @@ const OurTeam = () => {
                 <div className="row align-items-center">
                   <div className="col-md-6">
                     <h4>Senior HR</h4>
-                    <h4>Renuka Kotlapati</h4>
+                    <h4>Renuka Kolasanakoti</h4>
                     <p className='text-dark'>We're hiring engineers, designers & marketers to shape the future.</p>
                   </div>
                   <div className="col-md-6 text-center">

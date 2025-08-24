@@ -309,7 +309,7 @@ const UIUXDesign = () => {
         <div className="container">
           <h2>Ready to Elevate Your User Experience?</h2>
           <p>Contact us for a free consultation to create designs that captivate and convert.</p>
-          <a href="mailto:design@techlynxinnovations.com" className="btn">Get in Touch</a>
+          <Link to="/contact-us" className="btn">Get in Touch</Link>
         </div>
         <div className="col-12 text-center mt-5">
                     <Link to="/services">

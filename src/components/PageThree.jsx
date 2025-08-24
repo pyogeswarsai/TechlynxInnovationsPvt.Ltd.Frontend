@@ -19,9 +19,10 @@ const MapSection = () => {
 
     <div className="contact-details">
       <h2 className="fs-1 text-warning">Head Office</h2>
-      <p className="fs-5"><strong>📍 Address:</strong>  #10/3,near Tagore Chowk, Sali pet, Arundelpet, Guntur, Andhra Pradesh, 522601.</p>
-      <p className="fs-5"><strong>📞 Phone:</strong> +91 9876543210</p>
-      <p className="fs-5"><strong>✉️ Email:</strong> support@techlynxinnovations.com</p>
+      <p className="fs-5"><strong>📍 Address:</strong>  33-6-73, Arundlepet, 19/3, Opp.Ravindranath Tagore Statue, Guntur, A.P - 522002.</p>
+      <p className="fs-5"><strong>📞 Phone:</strong> +91 9989681812</p>
+      <p className="fs-5"><strong>📞 Phone:</strong> +91 9542982674</p>
+      <p className="fs-5"><strong>✉️ Email:</strong> info@techlynxinnovations.com</p>
     </div>
   </div>
 

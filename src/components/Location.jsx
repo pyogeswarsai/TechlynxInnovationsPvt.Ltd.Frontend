@@ -7,7 +7,7 @@ function Location() {
       <div className="location-container bg-dark bg-opacity-50 p-4 rounded-4 shadow text-center w-75" style={{ maxWidth: '1150px', height: '500px' }}>
         <h2 className="text-white mb-3 fs-1">Head Office</h2>
         <p className="text-white fs-4 mb-1">Guntur: Techlynx Innovations Pvt. Ltd.</p>
-        <p className="text-white fs-4 mb-1"> 10/3, near Tagore chowk, Sali Pet, Arundelpet, Guntur, Andhra Pradesh, 522601.</p>
+        <p className="text-white fs-4 mb-1"> 33-6-73, Arundlepet, 19/3, Opp.Ravindranath Tagore Statue, Guntur, A.P - 522002.</p>
        
         <div className="map-container mt-3 rounded overflow-hidden">
           <iframe

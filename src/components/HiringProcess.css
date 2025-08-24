@@ -100,7 +100,7 @@ body{
 }
 
 .hiring-background {
-  background-image: url('download (2).jpeg'); /* ✅ Replace with your image path */
+  background-image: url('/download (2).jpeg'); /* ✅ Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

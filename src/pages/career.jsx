@@ -148,7 +148,7 @@ const Career = () => {
         <div className="card h-100">
           <img src="renuka.jpg" className="card-img-top" alt="member-3" />
           <div className="card-body">
-            <h5 className="card-title fw-bold">Renuka Kotlapati</h5>
+            <h5 className="card-title fw-bold">Renuka Kolasanakoti</h5>
             <p className="card-text text-dark">
               "We're committed to nurturing digital talent in our company.I value my role in building pathways for innovation."
             </p>
@@ -304,7 +304,7 @@ const Career = () => {
                 <button className="btn btn-outline-light d-block mb-3 w-50" onClick={() => setShowFaq(true)}>FAQ</button>
                 <button className="btn btn-primary d-block w-50" onClick={() => setShowPopup(true)}>Subscribe</button>
             </div>
-         <div className="col-md-5 text-end">
+         <div className="col-md-5 text-center">
            <h4 className="text-white mb-4">Follow us on</h4>
            <div className="social-icons-container">
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>

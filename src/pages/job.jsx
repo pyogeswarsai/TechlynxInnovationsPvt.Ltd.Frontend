@@ -124,10 +124,12 @@ function JobForm() {
               <label className="form-label">Graduate Year *</label>
               <select name="graduationYear" className="form-select input-hover" required>
                 <option value="">Select your year</option>
+                <option>2021</option>
                 <option>2022</option>
                 <option>2023</option>
                 <option>2024</option>
                 <option>2025</option>
+                <option>2026</option>
               </select>
             </div>
 
@@ -135,10 +137,26 @@ function JobForm() {
               <label className="form-label">Applying for *</label>
               <select name="roleApplied" className="form-select input-hover" required>
                 <option value="">Select a role</option>
-                <option>Java Full Stack</option>
-                <option>Python Full Stack</option>
-                <option>DBMS</option>
-                <option>Cloud Computing</option>
+                <option>Java Full Stack Developer</option>
+              <option>Python Full Stack Developer</option>
+              <option>Cloud Engineer</option>
+              <option>UI/UX Designer</option>
+              <option>DevOps Engineer</option>
+              <option>Technical Support</option>
+              <option>Frontend Developer</option>
+              <option>Data Analyst</option>
+              <option>AI/ML Engineer</option>
+              <option>Business Analyst</option>
+              <option>Mobile App Developer</option>
+              <option>QA Tester</option>
+              <option>Network Engineer</option>
+              <option>System Administrator</option>
+              <option>Security Analyst</option>
+              <option>Digital Marketing Specialist</option>
+              <option>Project Manager</option>
+              <option>Product Owner</option>
+              <option>Content Writer</option>
+              <option>Graphic Designer</option>
               </select>
             </div>
 

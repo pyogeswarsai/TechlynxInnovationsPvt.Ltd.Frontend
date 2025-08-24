@@ -24,17 +24,19 @@ const Homefooter = () => {
                             <p>
                                 <span className='icons'><FontAwesomeIcon icon={faEnvelope} /></span>
                                 <a className='gmail' href='https://mail.google.com/mail/u/0/#inbox?compose=GFrJzjZkxlQQZVzNztxgNtRDvtbKJsgxBRlVCMlTgZLgFdjjXFKWpQWzPrqHwRmsXBKp'><strong>Email:</strong></a>
-                                 <span className="text-break">support@techlynxinnovations.com</span>
+                                 <span className="text-break">info@techlynxinnovations.com</span>
 
                             </p>
                             <p>
                                 <span className='icons'><FontAwesomeIcon icon={faPhone} /></span>
-                                <strong>Phone:</strong> +91 9876543210
+                                <strong>Phone:</strong> +91 9989681812 <br/>
+                                <span className='icons'><FontAwesomeIcon icon={faPhone} /></span>
+                                <strong>Phone:</strong> +91 9542982674 
                             </p>
                             <p>
                                 <span className='icons'><FontAwesomeIcon icon={faMapMarkerAlt} /></span>
                                 <a className='map' href='https://maps.app.goo.gl/e4J42ANng3gBZKV79'><strong>Location:</strong></a>
-                                 Guntur, Andhra Pradesh, 522601.
+                                 Guntur, Andhra Pradesh, 522002.
                             </p>
                         </div>
                     </div>
@@ -44,10 +46,10 @@ const Homefooter = () => {
                             <h3>Quick Links</h3>
                             <ul className="list-unstyled">
                                 <li><Link to="/home">Home</Link></li>
-                                <li><Link to="/about-us">AboutUs</Link></li>
+                                <li><Link to="/about-us">About Us</Link></li>
                                 <li><Link to="/services">Services</Link></li>
                                 <li><Link to="/careers">Career</Link></li>
-                                <li><Link to="/contact-us">Contact</Link></li>
+                                <li><Link to="/contact-us">Contact Us</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -68,11 +70,11 @@ const Homefooter = () => {
                         <div className="footer-content">
                             <h3>Follow Us</h3>
                             <ul className="list-unstyled social-icons">
-                                <li><a href="https://www.facebook.com/"><span className='icons'><FontAwesomeIcon icon={faFacebook} /></span> Facebook</a></li>
-                                <li><a href="https://x.com/"><span className='icons'><FontAwesomeIcon icon={faTwitter} /></span> Twitter</a></li>
-                                <li><a href="https://www.instagram.com/"><span className='icons'><FontAwesomeIcon icon={faInstagram} /></span> Instagram</a></li>
-                                <li><a href="https://www.linkedin.com/"><span className='icons'><FontAwesomeIcon icon={faLinkedin} /></span> Linkedin</a></li>
-                                <li><a href="https://www.youtube.com/"><span className='icons'><FontAwesomeIcon icon={faYoutube} /></span> Youtube</a></li>
+                                <li><a href="https://www.facebook.com/people/Techlynx-Innovations/61579158831359/"><span className='icons'><FontAwesomeIcon icon={faFacebook} /></span> Facebook</a></li>
+                                <li><a href="https://x.com/TechlynxLimited"><span className='icons'><FontAwesomeIcon icon={faTwitter} /></span> Twitter</a></li>
+                                <li><a href="https://www.instagram.com/techlynxinnovations/"><span className='icons'><FontAwesomeIcon icon={faInstagram} /></span> Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/in/nagul-meera-shaik-0b8650379/"><span className='icons'><FontAwesomeIcon icon={faLinkedin} /></span> Linkedin</a></li>
+                                <li><a href="https://www.youtube.com/@techlynxinnovationsprivatelimi"><span className='icons'><FontAwesomeIcon icon={faYoutube} /></span> Youtube</a></li>
                             </ul>
                         </div>
                     </div>
@@ -80,7 +82,7 @@ const Homefooter = () => {
             </div>
 
             <div className="bg-info text-white text-center py-3">
-                <p>&copy; 2025 Techlynx Innovations. All rights reserved.</p>
+                <p>&copy; 2025 Techlynx Innovations Pvt Ltd. All rights reserved.</p>
             </div>
         </footer>
     );

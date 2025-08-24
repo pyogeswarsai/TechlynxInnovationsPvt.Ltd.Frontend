@@ -10,28 +10,27 @@ import Navbar from '../components/nav';
 import { Link } from 'react-router-dom';
 
 const jobListings = [
-  { id: 1, title: "Java Full Stack Developer", location: "Hyderabad", experience: "2+ years", type: "Full Time", link: "#apply-java" },
-  { id: 2, title: "Python Developer", location: "Bangalore", experience: "Fresher", type: "Internship", link: "#apply-python" },
-  { id: 3, title: "Cloud Engineer", location: "Remote", experience: "3+ years", type: "Full Time", link: "#apply-cloud" },
-  { id: 4, title: "UI/UX Designer", location: "Chennai", experience: "1-2 years", type: "Part Time", link: "#apply-uiux" },
-  { id: 5, title: "DevOps Engineer", location: "Pune", experience: "2-4 years", type: "Full Time", link: "#apply-devops" },
-  { id: 6, title: "Technical Support", location: "Kolkata", experience: "0-1 year", type: "Contract", link: "#apply-support" },
-  { id: 7, title: "Frontend Developer", location: "Mumbai", experience: "3+ years", type: "Remote", link: "#apply-frontend" },
-  { id: 8, title: "Data Analyst", location: "Delhi", experience: "2 years", type: "Full Time", link: "#apply-data" },
-  { id: 9, title: "AI/ML Engineer", location: "Remote", experience: "4+ years", type: "Full Time", link: "#apply-ml" },
-  { id: 10, title: "Business Analyst", location: "Noida", experience: "2+ years", type: "Full Time", link: "#apply-business" },
-  { id: 11, title: "Mobile App Developer", location: "Ahmedabad", experience: "1+ years", type: "Full Time", link: "#apply-mobile" },
-  { id: 12, title: "QA Tester", location: "Chandigarh", experience: "Fresher", type: "Internship", link: "#apply-qa" },
-  { id: 13, title: "Network Engineer", location: "Hyderabad", experience: "2-3 years", type: "Full Time", link: "#apply-network" },
-  { id: 14, title: "System Administrator", location: "Pune", experience: "3+ years", type: "Full Time", link: "#apply-sysadmin" },
-  { id: 15, title: "Security Analyst", location: "Mumbai", experience: "2+ years", type: "Full Time", link: "#apply-security" },
-  { id: 16, title: "Digital Marketing Specialist", location: "Delhi", experience: "1-2 years", type: "Part Time", link: "#apply-marketing" },
-  { id: 17, title: "Project Manager", location: "Chennai", experience: "5+ years", type: "Full Time", link: "#apply-pm" },
-  { id: 18, title: "Product Owner", location: "Remote", experience: "5+ years", type: "Remote", link: "#apply-product" },
-  { id: 19, title: "Content Writer", location: "Kolkata", experience: "1 year", type: "Contract", link: "#apply-writer" },
-  { id: 20, title: "Graphic Designer", location: "Bangalore", experience: "2+ years", type: "Part Time", link: "#apply-graphic" },
+  { id: 1, title: "Java Full Stack Developer", location: "Hybrid", experience: "2+ years", type: "Full Time", link: "#apply-java" },
+  { id: 2, title: "Python Developer", location: "Remote", experience: "Fresher", type: "Internship", link: "#apply-python" },
+  { id: 3, title: "Cloud Engineer", location: "Guntur", experience: "3+ years", type: "Full Time", link: "#apply-cloud" },
+  { id: 4, title: "UI/UX Designer", location: "Hybrid", experience: "1-2 years", type: "Part Time", link: "#apply-uiux" },
+  { id: 5, title: "DevOps Engineer", location: "Remote", experience: "2-4 years", type: "Full Time", link: "#apply-devops" },
+  { id: 6, title: "Technical Support", location: "Guntur", experience: "0-1 year", type: "Contract", link: "#apply-support" },
+  { id: 7, title: "Frontend Developer", location: "Hybrid", experience: "3+ years", type: "Remote", link: "#apply-frontend" },
+  { id: 8, title: "Data Analyst", location: "Remote", experience: "2 years", type: "Full Time", link: "#apply-data" },
+  { id: 9, title: "AI/ML Engineer", location: "Guntur", experience: "4+ years", type: "Full Time", link: "#apply-ml" },
+  { id: 10, title: "Business Analyst", location: "Hybrid", experience: "2+ years", type: "Full Time", link: "#apply-business" },
+  { id: 11, title: "Mobile App Developer", location: "Remote", experience: "1+ years", type: "Full Time", link: "#apply-mobile" },
+  { id: 12, title: "QA Tester", location: "Guntur", experience: "Fresher", type: "Internship", link: "#apply-qa" },
+  { id: 13, title: "Network Engineer", location: "Hybrid", experience: "2-3 years", type: "Full Time", link: "#apply-network" },
+  { id: 14, title: "System Administrator", location: "Remote", experience: "3+ years", type: "Full Time", link: "#apply-sysadmin" },
+  { id: 15, title: "Security Analyst", location: "Guntur", experience: "2+ years", type: "Full Time", link: "#apply-security" },
+  { id: 16, title: "Digital Marketing Specialist", location: "Hybrid", experience: "1-2 years", type: "Part Time", link: "#apply-marketing" },
+  { id: 17, title: "Project Manager", location: "Remote", experience: "5+ years", type: "Full Time", link: "#apply-pm" },
+  { id: 18, title: "Product Owner", location: "Guntur", experience: "5+ years", type: "Remote", link: "#apply-product" },
+  { id: 19, title: "Content Writer", location: "Hybrid", experience: "1 year", type: "Contract", link: "#apply-writer" },
+  { id: 20, title: "Graphic Designer", location: "Remote", experience: "2+ years", type: "Part Time", link: "#apply-graphic" },
 ];
-
 const getIconForType = (type) => {
   switch (type.toLowerCase()) {
     case "full time": return "bi-briefcase-fill";

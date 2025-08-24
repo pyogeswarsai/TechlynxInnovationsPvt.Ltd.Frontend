@@ -308,7 +308,7 @@ const DataIntelligence = () => {
         <div className="container">
           <h2>Ready to Leverage Your Data?</h2>
           <p>Contact us for a free consultation to explore how our data intelligence solutions can drive your business forward.</p>
-          <a href="mailto:data@techlynxinnovations.com" className="btn">Get in Touch</a>
+          <Link to="/contact-us" className="btn">Get in Touch</Link>
         </div>
         <div className="col-12 text-center mt-5">
                     <Link to="/services">

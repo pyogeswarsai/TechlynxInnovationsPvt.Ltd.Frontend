@@ -24,7 +24,7 @@ const ManagementInfo = () => {
                 <strong>Mobile:</strong> +91 6309390893
               </p>
               <p className="text-body">
-                <strong>Email:</strong> Renuka.hr@techlynx.com
+                <strong>Email:</strong> hr@techlynxinnovations.com
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ const ManagementInfo = () => {
                 <strong>Mobile:</strong> +91 8019254863
               </p>
               <p className="text-body">
-                <strong>Email:</strong> vignasai.hr@techlynx.com
+                <strong>Email:</strong> Chundurivignasai@gmail.com
               </p>
             </div>
           </div>

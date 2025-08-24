@@ -56,15 +56,6 @@
   background-color: #084cd1;
 }
 
-.close-btn {
-  background: crimson;
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  margin-top: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-}
 
 @media (max-width: 480px) {
   .button-group {

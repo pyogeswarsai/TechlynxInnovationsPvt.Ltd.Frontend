@@ -300,7 +300,7 @@ const FullStackDevelopmentServices = () => {
         <div className="container">
           <h2>Ready to Build Your Web App?</h2>
           <p>Contact us for a free consultation and quote to create a scalable, high-performance web solution.</p>
-          <a href="mailto:web@techlynxinnovations.com" className="btn">Get in Touch</a>
+          <Link to="/contact-us" className="btn">Get in Touch</Link>
         </div>
                 <div className="col-12 text-center mt-5">
             <Link to="/services">

@@ -275,7 +275,7 @@ const CyberSecurity = () => {
         <div className="container">
           <h2>Secure Your Business</h2>
           <p>Contact us for a free consultation to protect your digital assets.</p>
-          <a href="mailto:security@techlynxinnovations.com" className="btn">Get in Touch</a>
+          <Link to="/contact-us" className="btn">Get in Touch</Link>
         </div>
         <div className="col-12 text-center mt-5">
                     <Link to="/services">

@@ -301,7 +301,7 @@ const AISolutionsServices = () => {
         <div className="container">
           <h2>Ready to Transform with AI?</h2>
           <p>Contact us for a free consultation to build intelligent solutions.</p>
-          <a href="mailto:ai@techlynxinnovations.com" className="btn">Get in Touch</a>
+          <Link to="/contact-us" className="btn">Get in Touch</Link>
         </div>
                 <div className="col-12 text-center mt-5">
             <Link to="/services">

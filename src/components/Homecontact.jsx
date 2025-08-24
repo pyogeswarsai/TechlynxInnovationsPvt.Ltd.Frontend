@@ -22,13 +22,15 @@ const Homecontact = () => {
               <p className="fs-5">Guntur:</p>
               <p className='fs-5'>
                 <FaMapMarkerAlt className="icon" />
-                10/3, near Tagore chowk, Sali Pet, Arundelpet, Guntur, Andhra Pradesh, 522601.
+                33-6-73, Arundlepet, 19/3, Opp.Ravindranath Tagore Statue, Guntur, A.P - 522002
               </p>
               <p className='fs-5'>
-                <FaEnvelope className="icon" /> support@techlynxinnovations.com
+                <FaEnvelope className="icon " /> 
+                <span className="text-break">info@techlynxinnovations.com</span>
               </p>
               <p className='fs-5'>
-                <FaPhone className="icon" /> +91 9876543210
+                <FaPhone className="icon" /> +91 9989681812 <br/>
+                <FaPhone className="icon" /> +91 9542982674
               </p>
               <Link to="/contact-us" ><Button variant="primary" className="know-more-btn" >
                 Visit Us
